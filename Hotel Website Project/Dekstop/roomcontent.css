@@ -1,0 +1,230 @@
+/* 1 bed */
+#content .one-bed{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 70px;
+    padding: 20px 20px 60px 20px;
+    margin-bottom: 60px;
+    animation-name: bordernice;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bordernice {
+    from{outline: white solid 6px;}
+    to{outline:none;}
+}
+
+/* 2 bed */
+#content .two-bed{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 70px;
+    padding: 20px 20px 60px 20px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    outline: white solid 6px;
+    animation-name: bordernice;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* suite */
+
+#content .suite{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 70px;
+    padding: 20px 20px 60px 20px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    outline: white solid 6px;
+    animation-name: bordernice;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* left,right, & mid content  */
+
+/* left for 1 & 2 bed*/
+#content #left1 {
+    font-size: 40px;
+}
+
+#content #left1 img {
+    margin-top: 10px;
+    width: 410px;
+    height: 318px;
+    border-radius: 20px;
+}
+
+/* mid content for 1,2 & some of suite*/
+
+#content #mid1 .feat {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+}
+
+#content #mid1 .list1 {
+    font-size: 16px;
+    display: flex;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+#content #mid1 .list1 .f-list2 {
+    padding-left: 130px;
+}
+
+#content #mid1 .list2{
+    font-size: 16px;
+    display: flex;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+#content #mid1 .list2 .rf-list2 {
+    padding-left: 80px;
+}
+
+/* right for 1 & 2 */
+
+#content #right1 {
+    margin-top: 220px;
+}
+
+#content #right1 .price {
+    font-size: 36px;
+    letter-spacing: 0px;
+}
+
+#content #right1 .detail {
+    font-size: 24px;
+    letter-spacing: 0px;
+}
+
+
+/* button for all room type */
+#content .btn button {
+    font-size: 24px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0px;
+    border: none;
+    margin-top: 10px;
+    border: white solid 3px;
+    transition: 0.5s;
+}
+
+#content .btn button:hover {
+    font-weight: 700;
+    color: black;
+    background-color: white;
+}
+
+/* image position for suite*/
+
+#content .suite  #img-row1 #one img {
+    width: 121px;
+    height: 121px;
+}
+
+#content .suite #img-row1 #two img {
+    width: 200px;
+    height: 121px;
+}
+
+#content .suite #img-row1 {
+    display:flex;
+    gap: 15px;
+}
+
+#content .suite #img-row2 #three img {
+    width: 240px;
+    height: 125px;
+}
+
+#content .suite #img-row3 #four img {
+    width: 240px;
+    height: 125px;
+    margin-left: 93px;
+}
+
+#content .suite #img-row4 #five img {
+    width: 200px;
+    height: 149px;
+}
+
+#content .suite #img-row4 #six img {
+    width: 121px;
+    height: 149px;
+}
+#content .suite #img-row4 {
+    display:flex;
+    gap: 15px;
+}
+
+/* kitchen-feature for suite */
+
+#content #mid1 .list3 {
+    font-size: 16px;
+    display: flex;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+#content #mid1 .list3 .kf-list2 {
+    padding-left: 77px;
+}
+
+/*right for suite*/
+
+#content #right2 {
+    margin-top: 500px;
+}
+
+#content #right2 .price {
+    font-size: 36px;
+    letter-spacing: 0px;
+}
+
+#content #right2 .detail {
+    font-size: 24px;
+    letter-spacing: 0px;
+}
+
+/* for line */
+
+hr {
+    width: 60%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    
+}
+
+
+@media(max-width:768px) {
+    /* i dont know how to change, not enough time sorry */
+}
+
+/* end */
+
+

@@ -1,0 +1,132 @@
+#content {
+    margin:0 160px;
+    width: 1120px;
+    height: auto;
+}
+
+#content .row {
+    display: flex;
+    gap: 20px;
+    margin: 15px;
+}
+
+#content .row .item {
+    position:relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+
+#content .row .item > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#content .row .item > .item-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    font-size: 48px;
+}
+
+#content .row .item > .item-desc.big-font {
+    font-size: 96px;
+}
+
+#content .row #big-pool {
+    width: 740px;
+    height: 377px;
+    font-size: 96px;
+}
+
+#content .row #rnc {
+    width: 360px;
+    height: 377px;
+}
+
+#content .row #eem {
+    width: 455px;
+    height: 783px;
+    font-size: 96px;
+}
+
+#content .row #eem #eem-text {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    line-height: 200px;
+}
+
+#content .row #row1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#content .row #row1 #tsr {
+    align-self: stretch;
+    width: 645px;
+    height: 377px;
+}
+
+#content .row #row1 #tsr #tsr-text {
+    justify-content: space-evenly;
+    padding-left: 20px;
+    line-height: 200px;
+}
+
+#content .row #row1 #row2 {
+    display: flex;
+    gap: 20px;
+}
+
+#content .row #row1 #row2 #cnr {
+    width: 360px;
+    height: 373px;
+}
+
+#content .row #row1 #row2 #spa {
+    width: 265px;
+    height: 373px;
+}
+
+#content .row #gym {
+    position : relative;
+    width: 550px;
+    height: 373px;
+}
+
+#content .row #gym #gym-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position : relative;
+    width: 550px;
+    height: 373px;
+    font-size: 64px;
+}
+
+#content .row #fit {
+    position : relative;
+    width: 550px;
+    height: 373px;
+}
+
+#content .row #fit #fit-text {
+    display: flex;
+    align-items: center;
+    position : relative;
+    width: 550px;
+    height: 373px;
+    padding-left: 60px;
+    font-size: 64px;
+    line-height: 130px;
+}
+
+@media(max-width:768px) {
+    /* i dont know how to change, not enough time sorry */
+}

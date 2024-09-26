@@ -1,0 +1,84 @@
+#footer {
+    height: 377px;
+    width: 100%;
+    margin-top: 150px;
+    background: black;
+}  
+
+#footer .foot1 {
+    display: flex;
+    height: 90%;
+    padding: 40px 0;
+}
+
+#footer .foot1 #logo-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    width: 25%;
+}
+
+#footer .foot1 .mid {
+    padding: 0 20px;
+    border-left: 2px white solid;
+    border-right: 2px white solid;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 37.5%;
+}
+
+#footer .foot1 .mid > *{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#footer .foot1 .mid > *:not(:last-child){
+    border-bottom: 2px white solid; 
+}
+
+#footer .foot1 .mid .text{
+    display: flex;
+    
+}
+
+#footer .foot1 .mid .text2{
+    padding-left: 17px;
+}
+
+#footer .foot1 .mid .text3{
+    padding-left: 15px;
+}
+
+#footer .foot1 .right{
+    width: 37.5%;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#footer .foot1 .right button{
+    border-radius: 40px;
+    height: 70px;
+    width: 197px;
+    font-size: 24px;
+    margin: 20px 0;
+    background-color: #5E5E5E;
+    outline: none;
+    border:none;
+}
+#footer .foot1 .right img{
+    display: inline;
+    width: 60px;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+#footer #copyright {
+    text-align: center;
+    height: 10%;
+}
+
+@media(max-width:768px) {
+    /* i dont know how to change, not enough time sorry */
+}

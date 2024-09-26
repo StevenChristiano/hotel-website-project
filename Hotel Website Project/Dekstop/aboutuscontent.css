@@ -1,0 +1,42 @@
+#content #title {
+    text-align: center;
+    font-size: 64px;
+    color: #CFCFCF;
+}
+#content .text {
+    font-size: 30px;
+    color: #CFCFCF;
+    line-height: 50px;
+}
+
+#content .text1 {
+    font-size: 30px;
+    color: #CFCFCF;
+    line-height: 50px;
+}
+
+#content .line13 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding-left: 80px;
+}
+
+
+#content img {
+    width: 30%;
+    height: 30vh;
+    border-radius: 8px;
+}
+
+#content .line13 .text1{
+    text-align: right;
+}
+@media (max-width = 768px) {
+    #content .line13 {
+        display: block;  
+    }
+
+    /* i dont know the code, not enough time, afraid to ruin it */
+}
+

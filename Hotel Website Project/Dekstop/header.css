@@ -1,0 +1,144 @@
+body {
+    background-color: #181818;
+}
+
+* {
+    color: white;
+    font-family: K2D, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+.vhotel-logo {
+    font-size: 90px;
+}
+
+/* header  */
+#navbar{
+    display: flex;
+    position:fixed;
+    height: 150px;
+    width: 100%;
+    background: black;
+    box-shadow: 2px 2px 4px black;
+    z-index:999;
+}
+
+#navbar > * {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar #Logo-head {
+    justify-content: left;
+    align-items: center;
+    margin-left: 80px;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+#navbar #book-now button {
+    border: 5px white solid;
+    border-radius: 20px;
+    width: 180px;
+    height: 75px;
+    background-color: transparent;
+    font-size: 28px;
+    outline: none;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+#navbar #book-now button:hover {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+#navbar #book-now.selected button{   
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+
+#navbar #book-now {
+    justify-self: start;
+    margin: 0px;
+    width: 15%;
+    align-items: center;
+}
+
+#navbar #navbar-nav {
+    display: flex;
+    width: 100px;
+    flex-grow: 3;
+    justify-content: right;
+    align-items: center;
+    gap: 35px;
+    margin-right: 10px;
+}
+
+#navbar #navbar-nav .nav-item {
+    padding: 0 20px;    
+    font-size: 1.5em;
+}
+
+/* https://css-tricks.com/cool-hover-effects-using-background-properties/ */
+#navbar-nav a {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(#ccc 0 0);
+    background-size: 100% 0.08em;
+    background-position: 200% 100%;
+    background-repeat: no-repeat;
+    transition: background-size .3s, background-position .3s .3s;
+
+    background: linear-gradient(#ccc 0 0) no-repeat calc(200% - var(--i,0)*100%) 100% / 200% calc(100%*var(--i,0) + .08em);
+    transition: .1s calc(var(--i,0)*.1s), background-position .2s calc(.2s - calc(var(--i,0)*.2s));
+}
+
+#navbar-nav a:hover {
+    transition: background-size .3s .3s, background-position .3s;
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+
+    --i: 1;
+}
+
+/* --------------------- */
+
+#navbar-nav a.selected{
+    font-weight: 700;
+    background-color: #ccc;
+}
+
+#navbar-nav a.selected .nav-item {
+    transition: 0.25s;
+    color: black;
+}
+
+#content {
+    padding-top: 250px;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    #navbar:not(:nth-child(2)) {
+        display: block;
+    }
+
+    #navbar span.nav-item {
+        display: flex;
+        flex-direction: row;
+    }
+    /* i dont know how to change, can't find reference */
+}

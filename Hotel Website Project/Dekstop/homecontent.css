@@ -1,0 +1,99 @@
+/* promo1 */
+
+#content .promo1,.promo2 {
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #001304;
+    font-size: 20px;
+}
+
+#content .promo1  #left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0.8em 0.8em 0;
+}
+
+#content .promo1 .mid{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0;
+}
+
+#content .promo1 .mid #starts{
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#content .promo1 .mid #price{
+    padding: 5px 74px 20px;
+    font-size: 2em;
+}
+
+#content .promo1 .mid #some-text{
+    padding-left: 30px;
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+#content .promo1  #right-image img {
+    width: 90%;
+    height: 30vh;
+    margin-top:10px;
+    border-radius: 0.8em;
+}
+
+#content .promo1 .tnc {
+    text-align: right;
+    font-size: 14px;
+    margin-top: auto;
+    margin-right: 20px;
+}
+
+/* promo2 */
+
+#content .promo2 {
+    margin-top: 30px;
+    display: flex;
+    background-color: #150000;
+}
+
+#content .promo2 .text {
+    display: flex;
+    flex-direction: column;
+}
+
+#content .promo2 .text #line1{
+    font-size: 24px;
+    padding: 20px 0 0 0;
+}
+
+#content .promo2 .text #discount{
+    font-size: 48px;
+    padding: 20px 0 30px 100px;
+}
+
+#content .promo2 .text #line2{
+    font-size: 24px;
+    text-align: right;
+    padding-bottom: 40px;
+}
+
+#content .promo2 .text #line3{
+    font-size: 24px;
+    padding-left: 100px;
+    line-height: 40px;
+}
+
+#content .promo2 .text .tnc {
+    text-align: right;
+    font-size: 12px;
+}
+
+#content .promo2 #right img {
+    height: 100%;
+    width: 100%;
+    justify-content: right;
+    align-items: end;
+    border-radius: 0.8px 0 0 0.8px;
+}

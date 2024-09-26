@@ -1,0 +1,97 @@
+#logo {
+    font-size: 96px;
+    margin: 20px;
+}
+
+#ty {
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 40px;
+}
+
+#content {
+    background-color: black;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 50px;
+    border-radius: 0.8rem;
+    line-height: 100px;
+}
+
+#content #a {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+#content #b, #d {
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+#content #d {
+    padding-bottom: 100px;
+}
+
+@media (max-width:768px) {
+    #content #b,#d {
+        font-size: 40px;
+    }
+}
+
+#content #c {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+#content #c span {
+    color: orange;
+    text-decoration: underline white;
+    padding:0 10px;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    from{color: orange;}
+    to{color: white;}
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+#button button {
+    display: flex;
+    width: 20%;
+    height: 50px;
+    padding: 12px 8px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    justify-content: center; 
+    background-color: black;
+    border: none;
+    font-size: 24px;
+    align-items: center;
+    border-radius: 0.8rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+#button button:hover {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+
+@media(max-width:768px) {
+    /* i dont know how to change, not enough time sorry */
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap" rel="stylesheet">
+    <title>D'HoTel</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="reservationcontent.css">
+    <script src="reservationform.js" defer></script>
+</head>
+<body>
+    <header id="navbar">
+        <a href="home.html"><span id="Logo-head" class="vhotel-logo">D'HoTel</span></a>
+         <span id="book-now" class="nav-item selected">
+            <button onclick="window.location.href = 'reservation.html';">Book Now</button>
+        </span> 
+        <span id="navbar-nav">
+           <a href="facilities.html"><span class="nav-item">Facilities</span></a> 
+            <a href="room.html"><span class="nav-item">Room</span></a>
+            <a href="about_us.html"><span class="nav-item">About Us</span></a>
+        </span>
+    </header>
+    <main id="content">
+        <div class="wrapper">
+            <form action="">
+                <div class="user-input">
+                    <label for="username">Full Name</label>
+                    <input type="text" id="username" name="username" placeholder="full name" class="inp">   
+                </div>
+                <div class="user-input">
+                    <label for="email">Email</label>
+                    <input type="email"  id="email" name="email" placeholder="email@gmail.com" class="inp">
+                </div>
+                <div class="user-input">
+                    <label for="check-in">Check-In Date</label>
+                    <input type="datetime-local" name="check-in" id="check-in" placeholder="dd/mm/yyyy" class="inp">
+                </div>
+                <div class="user-input">
+                    <label for="check-out">Check-Out Date</label>
+                    <input type="datetime-local" name="check-out" id="check-out" placeholder="dd/mm/yyyy" class="inp">
+                </div>
+                <div class="user-input">
+                    <label for="room">Room Type</label>
+                    <div class="custom-select">
+                        <select class="inp" name="room" id="room">
+                            <option value="Select" id="not">>--------------- Select ---------------<</option>
+                            <option value="1 Bed Room">1 Bed Room</option>
+                            <option value="2 Bed Room">2 Bed Room</option>
+                            <option value="Luxurious Suite">Luxurious Suite</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="user-input">
+                    <button id="button" onclick="submitValue()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="foot1">
+            <span id="logo-foot" class="vhotel-logo">D'HoTel</span>
+            <div class="mid">
+                <div class="text">
+                    <div>Email :</div>
+                    <div class="text2">
+                        D'HoTelBestHotel<br>@gmail.co.id
+                    </div>
+                </div>
+                <div class="text">
+                    <div>Phone :</div>
+                    <div class="text3">
+                        +62 21918482
+                    </div>
+                </div>
+                <div class="text">
+                    <div>Address:</div>
+                    <div>
+                         Saya Tersesat Street 7 No. 17, Tolong District, Jakarta, 12345
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>About</div>
+                <button onclick="window.location.href='about_us.html';">About Us</button>
+                <div>More Information About Us on</div>
+                <img src="Icon/twitter (3).png" alt="twitter">
+                <img src="Icon/linkedin.png" alt="linkedin">
+                <img src="Icon/instagram.png" alt="instagram">
+                <img src="Icon/facebook.png" alt="facebook">
+            </div>
+        </div>
+        <div id="copyright">Copyright © 2023 D'HoTel Hotel & Reserved</div>
+    </footer>            
+</body>
+</html>

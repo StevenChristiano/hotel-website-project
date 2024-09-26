@@ -1,0 +1,74 @@
+#content .wrapper{
+    max-width: 700px;
+    width: 100%;
+    background: #000;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 0.8rem;
+}
+
+#content .wrapper form .user-input {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+#content .wrapper form .user-input input,select,option{
+    color: #000;
+}
+
+#content .wrapper form .user-input label{
+    width: 150px;
+    font-size: 24px;
+    margin-right: 10px;
+    letter-spacing: 0;
+    padding: auto;
+}
+
+#content .wrapper form .user-input .inp{
+    width: 77%;
+    outline: none;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+#content .wrapper form .user-input .custom-select select{
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px 12px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+} 
+
+#content .wrapper form .user-input button {
+    width: 100%;
+    padding: 10px 12px;
+    font-weight: 700;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1E1E1E;
+    outline: 0;
+    margin-top: 50px;
+    transition: 0.25s;
+}
+
+
+#content .wrapper form .user-input button:hover {
+    background-color: #303030;
+}
+
+@media (max-width: 768px) {
+    #content .wrapper form .user-input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #content .wrapper form .user-input .inp {
+        width: 100%;
+    }
+}
